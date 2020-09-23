@@ -53,3 +53,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+menus:
+  -
+    href: /life.html
+    label: 故事
+    target: _self
+
+  - href: /thread.html
+    label: thread
+    target: _self
+
+
