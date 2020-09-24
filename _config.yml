@@ -1,66 +1,222 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Site settings
+title:  逍遥风
+subtitle: get konwledge,create fun
+name: 逍遥风
+email: xiaoyaowind@126.com
+description: 本站是逍遥风的技术分享博客。内容目前涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、多线程并发等的知识分享。
+keywords: xiaoyaowind,逍遥风,Spring,Spring Boot,Spring Cloud,Jvm,生活故事,开发者,编程,代码,开源,IT网站,Programmer,Coder,Geek,IT技术博客,Java
+encoding: "utf-8"
+favicon: favicon.ico
+
+repository: xiaoyaowind/xiaoyaowind.github.io
+github_url: https://github.com/xiaoyaowind
+url: http://www.xiaoyaowind.com
+enforce_ssl: xiaoyaowind.com
+
+## Gem
+plugins:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+  syntax_highlighter: rouge
+
+syntax_highlighter_opts:
+  coderay_line_numbers:  nil
+
+# Pagination
+paginate: 12
+paginate_path: 'page:num'
+
+# Navigation. top menu list
 menus:
+
+  -
+    href: /python.html
+    label: Python
+    target: _self
+
+  -
+    href: /it.html
+    label: IT
+    target: _self
+
+  -
+    href: /zsxq.html
+    label: 星球
+    target: _self
+
   -
     href: /life.html
     label: 故事
     target: _self
 
-  - href: /thread.html
-    label: thread
+  -
+    href: /arch.html
+    label: 架构
+    target: _self
+
+  -
+    href: /link.html
+    label: 友链
     target: _self
 
 
+
+# Navigation. main menu list
+navs:
+
+  -
+    href: /
+    label: Home
+
+  -
+    href: /spring-boot.html
+    label: Spring Boot
+    target: _self
+    subnav:
+
+      -
+        subHref: /spring-boot.html
+        subLabel: Spring Boot
+
+      -
+        subHref: /spring-cloud.html
+        subLabel: Spring Cloud
+
+  -
+    href: /spring-cloud.html
+    label: Spring Cloud
+    target: _self
+
+  -
+
+    href: http://www.justdojava.com
+    label: Java
+    target: _blank
+    subnav:
+
+      -
+        subHref: /java.html
+        subLabel: Java系列文章
+
+      -
+        subHref: http://www.justdojava.com
+        subLabel: Java 极客技术
+        target: _blank
+
+  -
+    href: /archives.html
+    label: Archives
+    target: _self
+  -
+    href: /thread.html
+    label: Thread
+    target: _self
+  -
+    href: /about.html
+    label: About
+    target: _self
+
+
+# labels. my blog key words
+labels:
+
+  -
+    href: /payment.html
+    label: 支付
+    target: _self
+
+  -
+    href: /fastdfs.html
+    label: FastDFS
+    target: _blank
+
+  -
+    href: /mongodb.html
+    label: MongoDB
+    target: _blank
+
+  -
+    href: /docker.html
+    label: Docker
+    target: _blank
+
+  -
+    href: /open-source.html
+    label: Code
+    target: _blank
+
+  -
+    href: /gitchat.html
+    label: Chat
+    target: _blank
+
+  -
+    href: /geektime.html
+    label: 极客
+    target: _blank
+
+
+# selected articles
+classes:
+
+  -
+    href: /life.html
+    name: 我的故事
+    describe: 生活就是故事，故事就是生活
+
+  -
+    href: /arch.html
+    name: 架构师之路
+    describe: 一个架构师的自我修养
+
+  -
+    href: /java.html
+    name: Java 系列文章
+    describe: Java 之根基，Java 程序员必学
+
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 6 # Number of repos to show
+
+# Google Analytics
+# analytics :
+# provider : google
+#   google :
+#     tracking_id : ''  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, hyhird app]
