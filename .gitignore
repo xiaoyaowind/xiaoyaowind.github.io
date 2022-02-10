@@ -1,0 +1,8 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+/.idea/
+/assets/files/2017/解决联通用户上网手册.doc
+/assets/files/CV_Chuan_Dong_FR.pdf

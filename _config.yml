@@ -1,0 +1,176 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:  逍遥风
+subtitle: 知识就是力量
+name: 逍遥风
+email: xiaoyaowind@126.com
+description: 本站是逍遥风的技术分享博客。内容目前涵盖Java后端技术、Spring Boot、Spring Cloud、多线程并发等知识学校。
+keywords: xiaoyaowind,逍遥风,Spring,Spring Boot,Spring Cloud,Jvm,开发者,编程,代码,开源,Programmer,Coder,Java
+encoding: "utf-8"
+favicon: favicon.ico
+
+repository: xiaoyaowind/xiaoyaowind.github.io
+github_url: https://github.com/xiaoyaowind
+url: http://www.xiaoyaowind.com
+enforce_ssl: xiaoyaowind.com
+
+## Gem
+plugins:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+  syntax_highlighter: rouge
+
+syntax_highlighter_opts:
+  coderay_line_numbers:  nil
+
+# Pagination
+paginate: 12
+paginate_path: 'page:num'
+
+# Navigation. top menu list
+menus:
+
+  -
+    href: /it.html
+    label: IT
+    target: _self
+
+  -
+    href: /zsxq.html
+    label: 星球
+    target: _self
+
+  -
+    href: /life.html
+    label: 故事
+    target: _self
+
+  -
+    href: /arch.html
+    label: 架构
+    target: _self
+
+  -
+    href: /link.html
+    label: 友链
+    target: _self
+
+
+
+# Navigation. main menu list
+navs:
+
+  -
+    href: /
+    label: Home
+
+  -
+    href: /spring-boot.html
+    label: Spring Boot
+    target: _self
+    subnav:
+
+      -
+        subHref: /spring-boot.html
+        subLabel: Spring Boot
+
+      -
+        subHref: /spring-cloud.html
+        subLabel: Spring Cloud
+
+  -
+    href: /spring-cloud.html
+    label: Spring Cloud
+    target: _self
+
+  -
+
+    href: http://www.justdojava.com
+    label: Java
+    target: _blank
+    subnav:
+
+      -
+        subHref: /java.html
+        subLabel: Java系列文章
+
+  -
+    href: /archives.html
+    label: Archives
+    target: _self
+  -
+    href: /thread.html
+    label: Thread
+    target: _self
+  -
+    href: /about.html
+    label: About
+    target: _self
+
+
+# labels. my blog key words
+labels:
+  -
+    href: /abc.html
+    label: abc
+    target: _blank
+
+
+# selected articles
+classes:
+
+  -
+    href: /life.html
+    name: 我的故事
+    describe: 生活就是故事，故事就是生活
+
+  -
+    href: /java.html
+    name: Java 系列文章
+    describe: Java 之根基，Java 程序员必学
+
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 6 # Number of repos to show
+
+# Google Analytics
+# analytics :
+# provider : google
+#   google :
+#     tracking_id : ''  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, hyhird app]
