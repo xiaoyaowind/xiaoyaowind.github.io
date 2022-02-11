@@ -135,8 +135,8 @@ navs:
 # labels. my blog key words
 labels:
   -
-    href: /abc.html
-    label: abc
+    href: /spring.html
+    label: spring
     target: _blank
 
 
