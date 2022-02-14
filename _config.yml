@@ -124,13 +124,12 @@ navs:
     label: Thread
     target: _self
   -
-    href: /about.html
-    label: About
-    target: _self
-
-  -
     href: /software.html
     label: software
+    target: _self
+
+  - href: /about.html
+    label: About
     target: _self
 
 # labels. my blog key words
