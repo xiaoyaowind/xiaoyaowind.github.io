@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ConcurrentHashMap源码剖析
-category: Thread
+category: thread
 tags: [like]
 keywords: HashMap,java,ConcurrentHashMap
 ---

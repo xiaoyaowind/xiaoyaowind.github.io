@@ -93,7 +93,6 @@ navs:
     label: Spring Boot
     target: _self
     subnav:
-
       -
         subHref: /spring-boot.html
         subLabel: Spring Boot
@@ -106,9 +105,7 @@ navs:
     href: /spring-cloud.html
     label: Spring Cloud
     target: _self
-
   -
-
     href: http://www.justdojava.com
     label: Java
     target: _blank
@@ -131,6 +128,10 @@ navs:
     label: About
     target: _self
 
+  -
+    href: /software.html
+    label: software
+    target: _self
 
 # labels. my blog key words
 labels:
