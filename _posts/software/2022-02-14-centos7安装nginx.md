@@ -7,7 +7,7 @@ keywords: 安装软件
 ---
 centos7 安装nginx步骤(本文默认进入是/root)
 ## 1.下载nginx:[下载地址](http://nginx.org/en/download.html)
-    或者直接使用命令下载 
+或者直接使用命令下载 
 ```
 wget http://nginx.org/download/nginx-1.20.1.tar.gz  
 ```
