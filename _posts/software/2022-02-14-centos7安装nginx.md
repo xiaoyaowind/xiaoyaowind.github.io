@@ -3,7 +3,7 @@ layout: post
 title: centos7安装nginx
 category: software
 tags: [software]
-keywords: 安装软件
+keywords: 安装软件,centos7,nginx,安装nginx,centos7安装nginx
 ---
 centos7 安装nginx步骤(本文默认进入是/root)
 

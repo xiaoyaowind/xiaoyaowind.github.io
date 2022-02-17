@@ -2,7 +2,7 @@
 layout: page
 title: Java
 titlebar: java
-subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; Java 人的精神家园。>&nbsp;&nbsp;>&nbsp;&nbsp;<a href ="http://www.justdojava.com/" target="_blank" ><font color="#EB9439">点我直达</font></a>
+subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; Java 人的精神家园。>&nbsp;&nbsp;>&nbsp;&nbsp;<a href ="http://www.xiaoyaowind.com/" target="_blank" ><font color="#EB9439">点我直达</font></a>
 menu: java
 css: ['blog-page.css']
 permalink: /java
@@ -38,6 +38,7 @@ permalink: /java
 </div>
 <script>
     $(document).ready(function(){
+
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 

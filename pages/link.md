@@ -15,5 +15,5 @@ permalink: /link
 
 - 网站名称：xiaoyaowind  
 - 网站链接：http://www.xiaoyaowind.com  
-- 网站描述：neo 的个人博客，分享技术，分享生活  
+- 网站描述：逍遥风的个人博客，分享技术，分享生活  
 
