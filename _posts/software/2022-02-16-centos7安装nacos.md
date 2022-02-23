@@ -42,7 +42,7 @@ vim startup.sh
 ```
 export MODE="standalone"
 ```
-![](http://image.xiaoyaowind.com/image/1645013675(1).png)
+![](http://image.xiaoyaowind.com/image/1645013675.png)
 保存退出
 然后访问http//ip:8848/nacos/index.html
 用户名和密码默认都是nacos,如果需要修改用户名请数据库修改，如果需要修改密码，请建立java web服务,maven中配置依赖包
