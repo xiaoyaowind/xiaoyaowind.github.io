@@ -112,6 +112,10 @@ navs:
     label: software
     target: _self
 
+  - href: /need.html
+    label: need
+    target: _self
+
   - href: /about.html
     label: About
     target: _self
