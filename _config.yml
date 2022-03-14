@@ -32,7 +32,6 @@ markdown: kramdown
 highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
-
 source:      .
 destination: ./_site
 
@@ -48,7 +47,7 @@ syntax_highlighter_opts:
   coderay_line_numbers:  nil
 
 # Pagination
-paginate: 12
+paginate: 4
 paginate_path: 'page:num'
 
 # Navigation. top menu list

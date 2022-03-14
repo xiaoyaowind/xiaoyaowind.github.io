@@ -9,11 +9,11 @@ css: ['sidebar-post-nav.css']
 
         {% if page.no-post-nav %}
         <div class="col-md-12 markdown-body">
-
             {{ content }}
 
             {% include copyright.html %}
-
+            {% capture time %}{{ content | reading_time }}{% endcapture %}
+            <p>This article will take {{ time }} {% if time == '1' %}minute{% else %}minutes{% endif %} to read.</p>
             <!-- Comments -->
            <div class="comment">
              {% include comments.html %}
