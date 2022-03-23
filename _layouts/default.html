@@ -14,22 +14,4 @@
     {% include footer.html %}
 
     </body>
-<script src="https://my.openwrite.cn/js/readmore.js" type="text/javascript"></script>
-<script>
-    window.onload = function() {
-        themeDefaultContent = $(
-            '#app > .theme-container>.page > .theme-default-content' // 获取最外层的元素
-        );
-
-        themeDefaultContent.attr('id', 'container'); // 设置id属性,就是这么牛逼,搞定
-        const btw = new BTWPlugin();
-        btw.init({
-            id: 'container',
-            blogId: '23842-1647498291148-271',
-            name: '逍遥风',
-            qrcode: 'http://image.xiaoyaowind.com/image/202203171424864.jpg',
-            keyword: '验证码',
-        });
-    };
-</script>
 </html>
